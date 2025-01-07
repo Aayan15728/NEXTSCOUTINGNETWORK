@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Video Ratings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Football Video Ratings</h1>
+    </header>
+
+    <!-- Section 1: User Authentication -->
+    <section id="auth-section">
+        <h2>Sign Up / Log In</h2>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <p id="user-info"></p>
+        <button onclick="signOut()">Sign Out</button>
+    </section>
+
+    <!-- Section 2: Video Gallery -->
+    <section id="video-gallery">
+        <h2>Watch Videos</h2>
+        <div id="videos">
+            <!-- Add your videos here -->
+            <video src="video1.mp4" controls></video>
+            <video src="video2.mp4" controls></video>
+        </div>
+    </section>
+
+    <!-- Section 3: Video Upload -->
+    <section id="upload-section">
+        <h2>Upload Your Video</h2>
+        <form id="upload-form">
+            <input type="file" id="video-file" accept="video/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        <p id="upload-status"></p>
+    </section>
+
+    <!-- Section 4: About You -->
+    <section id="about-section">
+        <h2>About Me</h2>
+        <div id="about-images">
+            <img src="https://source.unsplash.com/400x300/?football" alt="Football">
+            <img src="https://source.unsplash.com/400x300/?player" alt="Player">
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
