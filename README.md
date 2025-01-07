@@ -1,4 +1,11 @@
 # NEXT SCOUTING NETWORK
+NEXTSCOUTINGNETWORK/
+├── index.html
+├── styles.css
+├── scripts.js
+└── videos/
+    ├── video1.mp4
+    └── video2.mp4
 <!DOCTYPE html>
 <html lang="en">
 <head>
